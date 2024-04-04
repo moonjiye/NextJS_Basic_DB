@@ -10,5 +10,7 @@ export default async function handler(req, res) {
     )
     console.log(result)
     res.status(200).redirect('/list')
+  } else if(req.method == "GET") {
+    console.log(req.quest)
   }
 }
