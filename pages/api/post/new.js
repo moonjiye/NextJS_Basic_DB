@@ -4,7 +4,7 @@ import { authOptions } from "../auth/[...nextauth]";
 
 export default async function handler(req, res) {
   let session = await getServerSession(req, res, authOptions)
-  console.log(session)
+  console.log(session.user.email)
 
   // if (req.method == "POST") {
   //   console.log(req.body);
