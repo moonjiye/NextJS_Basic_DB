@@ -11,9 +11,9 @@ export default async function Detail(props) {
   return (
     <div>
       <h4>상세페이지</h4>
-      <h4>{result.title}</h4>
-      <p>{result.content}</p>
-      <Comment />
+      <p>글제목: {result.title}</p>
+      <p>글내용: {result.content}</p>
+      <Comment parentId = {result._id.toString()} />
     </div>
   );
 }
